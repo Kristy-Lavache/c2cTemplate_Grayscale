@@ -5,7 +5,7 @@
  */
 #mainNav {
   min-height: 56px;
-  background-color: #00FFFF;
+  background-color: linear-gradient(to bottom, #E4F9FB, #0000FF)
 }
 
 #mainNav .navbar-toggler {
@@ -288,7 +288,7 @@ a:focus, a:hover {
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: #FF0000 !important;
 }
 
 footer {
