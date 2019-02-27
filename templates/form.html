@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Finding Soldiers</title>
+        <link href="../static/css/form.css" rel="stylesheet">
+    </head>
+    <body id="page">
+    <header class="header">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 style="color:green" class="Title"> Start Your Search Here!</h1>
+                    <h5 style="color:red" id="fillout">Please fill out the form to the best of your ability with the information of the person you are trying to find.</h2>
+                </div>
+            </div>
+    <div id="namebox" class="col-md-6">
+        <label id="FirstName" for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="Sean" value="" required="">
+    </div>
+    <div class="col-md-6">
+        <label id="LastName" for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Matthews" value="" required="">
+    </div>
+    <div></div>
+        <p>What branch of military did your loved one belong to?</p>
+        <select id="Branch" required>
+            <option>Select One</option>
+            <option>Army</option>
+            <option>Airfore</option>
+            <option>Marines</option>
+            <option>Navy</option>
+            <option>Coast Guard</option>
+        </select>
+    </div>
+    <div>
+        Date of loved ones birth.
+        <input class="date" type="date">
+    </div>
+    <div>
+        Date of loved ones death.
+        <input class="date" type="date">
+    </div>
+    </header>
+    </body>
+</html>

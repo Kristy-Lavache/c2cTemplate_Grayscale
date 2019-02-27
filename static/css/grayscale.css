@@ -294,3 +294,7 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+
+#about {
+    font-size: 25px;
+}

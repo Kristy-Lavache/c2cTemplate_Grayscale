@@ -40,3 +40,18 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+function BlueColor() {
+    var btnPrimary = document.querySelector('.btn-primary');
+    btnPrimary.classlist.add('blue-color');
+}
+
+function removeBlueColor() {
+    var btnPrimary = document.querySelector('.btn-primary');
+    btnPrimary.classlist.remove('blue-color');
+}
+
+/*function myFunction () {
+    document.getElementById("btn-primary").style.color = "red";
+}*/
+

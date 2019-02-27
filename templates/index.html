@@ -55,7 +55,7 @@
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 text-uppercase">Finding loved ones</h1>
           <h2 class="text-#228B22-50 mx-auto mt-2 mb-5">A place where you can look to find lost loved ones wherever they may be.</h2>
-          <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+          <a href="https://www.pythonanywhere.com/user/KLAVA16/files/home/KLAVA16/c2cTemplate_Grayscale/templates/form.html" class="btn btn-primary js-scroll-trigger">Get Started</a>
         </div>
       </div>
     </header>
@@ -64,9 +64,9 @@
     <section id="about" class="about-section text-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-10 mx-auto">
             <h2 class="text-white mb-4">About</h2>
-            <p class="text-white-50">Knowing how hard it is to lose a loved one, we strive to make finding lost ones as simple as possible. With a few clicks of a button, we can help you locate where your loved ones are buried and any information we can find about them. We are sorry for your loss and if there is anything we can do to make your experience any easier, please do not hesitate to contact us. We are here for you. </p>
+            <p id="about" class="text-white-50">Knowing how hard it is to lose a loved one, we strive to make finding lost ones as simple as possible. With a few clicks of a button, we can help you locate where your loved ones are buried and any information we can find about them. We are sorry for your loss and if there is anything we can do to make your experience any easier, please do not hesitate to contact us. We are here for you. </p>
           </div>
         </div>
         <img src="../static/img/soldiers-559761_1280.jpg" class="img-fluid" alt="Soldiers Saluting">
@@ -85,8 +85,8 @@
           </div>
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
-              <h4>Shoreline</h4>
-              <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+              <h4>Soldier</h4>
+              <p class="text-black-50 mb-0">Being a soldier is more than being in a uniform. Being a soldier means you are selfless as a leader. It means you are loyal, believe in your duty, have and are able to give respect, have honor, integrity, and personal courage. To be a soldier, one must have most if not all of these qualities. It is because of them that we are able to enjoy the future we get tomorrow. It is because of them we get to rejoice and be glad of our freedom. So, to all those individuals and soldiers, we say Thank You!</p>
             </div>
           </div>
         </div>
@@ -138,11 +138,35 @@
           <div class="col-md-10 col-lg-8 mx-auto text-center">
 
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+            <h2 class="text-white mb-5">Contact Us!</h2>
 
             <form class="form-inline d-flex">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+            <div class="col-md-6 mb-3">
+                <label id="FirstName" for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" placeholder value required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label id="LastName" for="lastName">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" placeholder value required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label id="Email" for="email">Email</label>
+                <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+                <div class="invalid-feedback">
+                  Valid email address is required.
+                </div>
+            </div>
+            <div>
+                <label id="message">Message</label>
+              <textarea rows="15" cols="100"></textarea>
+              <button type="submit" class="btn btn-primary mx-auto">Submit</button>
+            </div>
             </form>
 
           </div>

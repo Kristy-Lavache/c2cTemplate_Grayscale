@@ -1,0 +1,12 @@
+/*#page{*/
+/*    background: linear-gradient(to bottom, #4b5320, #7CFC00, white);*/
+/*}*/
+
+#namebox {
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+#FirstName, #LastName {
+    font-weight: bold;
+}
