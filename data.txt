@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Birth</th>
+                    <th scope="col">Death</th>
+                    <th scope="col">Military Branch</th>
+                </tr>
+            </thead>
+            <tbody id="output">
+                <tr>
+                    <td>Steve Rodgers</td>
+                    <td>8/11/1975</td>
+                    <td>unknown</td>
+                    <td>Army</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>4/06/1765</td>
+                    <td>06/25/1823</td>
+                    <td>Navy</td>
+                </tr>
+                <tr>
+                    <td>Sandra Keller</td>
+                    <td>03/06/1987</td>
+                    <td>06/11/2018</td>
+                    <td>Airforce</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+
+table {
+    border-collapse: collapse;
+} css to get rid of spaces between headers
