@@ -1,0 +1,5 @@
+.table .thead-dark th {
+    border-collapse: collapse;
+    background-color: #416B05;
+    border-color: green;
+}

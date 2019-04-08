@@ -8,13 +8,11 @@ html{
     height : 100%;
 }
 
-#namebox {
-    padding-bottom: 15px;
-    margin-bottom: 10px;
-}
 
-#FirstName, #LastName {
+/*#FirstName, #LastName, #birth, #death, #branch {*/
+label {
     font-weight: bold;
+    margin: 10px;
 }
 
 .date {
@@ -22,27 +20,16 @@ html{
     margin-top: 20px;
 }
 
-#branch {
-    font-weight: bold;
-    margin: 25px;
-}
-
-#Branch {
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-#birth, #death {
-    font-weight: bold;
-}
-
 #button{
     margin-left: 260px;
     padding: 2px 6px;
     border-width: 10px;
-    border-color: red;
+    border-color: black;
 }
 
+#button {
+    margin-top: 10px;
+}
 
 
 

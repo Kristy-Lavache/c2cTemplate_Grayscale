@@ -9,11 +9,16 @@ def main():
 def form():
     return render_template("form.html")
 
+@app.route('/data', methods=['GET'])
 def data():
-    file_object  = open("data.txt", "r")
-    line = file_object.readline()
-    info = line.split()
-    print(info)
+    return render_template("data.html")
+
+
+# def data():
+#     file_object  = open("data.txt", "r")
+#     line = file_object.readline()
+#     info = line.split()
+#     print(info)
 
 if __name__ == '__main__':
     # app.run()
