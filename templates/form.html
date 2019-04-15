@@ -23,12 +23,8 @@
             </div>
     </header>
     <div id="namebox" class="col-md-6">
-        <label id="FirstName" for="firstName">First Name</label>
-        <input type="text" class="form-control" id="firstName" placeholder="Sean" value="" required="">
-    </div>
-    <div class="col-md-6">
-        <label id="LastName" for="lastName">Last Name</label>
-        <input type="text" class="form-control" id="lastName" placeholder="Matthews" value="" required="">
+        <label id="fullName" for="firstName">Full Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="Sean Williams" value="" required="">
     </div>
     <div class="col-md-7">
         <label id="branch" for="branch">What branch of military did your loved one belong to?</label>
@@ -52,7 +48,7 @@
     <div id="button">
         <button onclick="loadtable()">Submit</button>
     </div>
-    <div id="data"></div>
+    <table id="output" class="table"></table>
     <script src="../static/js/table.js"></script>
     </body>
 </html>
