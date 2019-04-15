@@ -24,6 +24,7 @@ def data():
 #     print(info)
 
 def loaddata():
+    name = request.args.get('name')
     soldiers = []
     soldier1 = {}
     soldier1['name'] = "Steve Rodgers"
@@ -37,7 +38,7 @@ def loaddata():
     soldier2['dob'] = "09/23/1786"
     soldier2['dod'] = "12/28/1821"
     soldiers.append(soldier2)
-    return soldiers
+    return [s for s in soldiers if name in s['name']]
     # soldier3 = {}
     # soldier3['name'] = "Leo Bert Abramoski"
     # soldier3['dob'] = "02/07/1933"
