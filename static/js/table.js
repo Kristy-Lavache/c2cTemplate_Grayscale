@@ -9,7 +9,7 @@ function loadtable () {
             })
         }
     };
-    xhttp.open("GET", "/data?name=" + document.getElementById("firstName").value, true);
+    xhttp.open("GET", "/data?name=" + document.getElementById("firstName").value + "&branch=" + document.getElementById("Branch").value + "&birth=" + document.getElementById("Birth").value + "&death=" + document.getElementById("Death").value, true);
     xhttp.send();
 
 
