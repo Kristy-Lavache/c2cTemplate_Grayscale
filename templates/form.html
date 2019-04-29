@@ -28,7 +28,7 @@
     </div>
     <div class="col-md-7">
         <label id="branch" for="branch">What branch of military did your loved one belong to?</label>
-        <select class="form-control" id="Branch" value="" required="">
+        <select class="form-control" class="statusText" id="Branch" value="" required="">
             <option>Select One</option>
             <option>Coast Guard</option>
             <option>Air Force</option>
@@ -39,11 +39,11 @@
     </div>
     <div class="col-md-4">
         <label id="birth">Date of loved ones birth.</label>
-        <input class="form-control" type="date">
+        <input class="form-control" class="statusText" id="Birth" type="date">
     </div>
     <div class="col-md-4">
         <label id="death">Date of loved ones death.</label>
-        <input class="form-control" type="date">
+        <input class="form-control" class="statusText" id="Death" type="date">
     </div>
     <div id="button">
         <button onclick="loadtable()">Submit</button>

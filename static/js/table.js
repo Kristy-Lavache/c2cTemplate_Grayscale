@@ -14,6 +14,7 @@ function loadtable () {
 
 
 }
+
 function addSoldier(soldier) {
     var output = document.getElementById("output");
 
@@ -29,11 +30,11 @@ function addSoldier(soldier) {
     newRow.appendChild(dob);
 
     var dod = document.createElement("td");
-    dod.innerText = soldier['dod'];
+    dod.innerText = soldier.dod;
     newRow.appendChild(dod);
 
     var militaryBranch = document.createElement("td");
-    militaryBranch.innerText = soldier.military_branch;
+    militaryBranch.innerText = soldier.militaryBranch;
     newRow.appendChild(militaryBranch);
 
     var rank = document.createElement("td");

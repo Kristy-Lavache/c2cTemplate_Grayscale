@@ -24,63 +24,62 @@ def data():
 #     print(info)
 
 def loaddata():
+    birth = request.args.get('birth')
+    branch = request.args.get('branch')
     name = request.args.get('name')
     soldiers = []
-    soldier1 = {}
-    soldier1['name'] = "Steve Rodgers"
-    soldier1['dob'] = "09/23/1786"
-    soldier1['dod'] = "Unknown"
-    soldier1['militaryBranch'] = "Army"
-    soldier1['rank'] = "Unknown"
-    soldiers.append(soldier1)
-    soldier2 = {}
-    soldier2['name'] = "Jane Doe"
-    soldier2['dob'] = "09/23/1786"
-    soldier2['dod'] = "12/28/1821"
-    soldiers.append(soldier2)
+    soldier = {}
+    soldier['name'] = "Leo Abramoski"
+    soldier['dob'] = "02/07/1933"
+    soldier['dod'] = "07/28/1964"
+    soldier['militaryBranch'] = "Army"
+    soldier['rank'] = "CAPT"
+    soldiers.append(soldier)
+    soldier01 = {}
+    soldier01['name'] = "Steve Rodgers"
+    soldier01['dob'] = "09/23/1786"
+    soldier01['dod'] = "Unknown"
+    soldier01['militaryBranch'] = "Army"
+    soldier01['rank'] = "Unknown"
+    soldiers.append(soldier01)
+    soldier02 = {}
+    soldier02['name'] = "Jane Doe"
+    soldier02['dob'] = "10/15/1786"
+    soldier02['dod'] = "12/28/1821"
+    soldier02['militaryBranch'] = "Army"
+    soldier02['rank'] = "LTFC"
+    soldiers.append(soldier02)
+    soldier03 = {}
+    soldier03['name'] = "Roberts Achas"
+    soldier03['dob'] = "01/01/1943"
+    soldier03['dod'] = "03/14/1965"
+    soldier03['militaryBranch'] = "Marine Corp"
+    soldier03['rank'] = "LCPL"
+    soldiers.append(soldier03)
+    soldier04 = {}
+    soldier04['name'] = "Jesse Acosta"
+    soldier04['dob'] = "08/06/1934"
+    soldier04['dod'] = "05/16/1965"
+    soldier04['militaryBranch'] = "Air Force"
+    soldier04['rank'] = "SSGT"
+    soldiers.append(soldier04)
+    soldier05 = {}
+    soldier05['name'] = "James Alexander"
+    soldier05['dob'] = "10/07/1925"
+    soldier05['dod'] = "02/10/1965"
+    soldier05['militaryBranch'] = "Army"
+    soldier05['rank'] = "SP5"
+    soldiers.append(soldier05)
+    soldier06 = {}
+    soldier06['name'] = "James Bailey"
+    soldier06['dob'] = "04/28/1928"
+    soldier06['dod'] = "09/04/1964"
+    soldier06['militaryBranch'] = "Army"
+    soldier06['rank'] = "SSGT"
+    soldiers.append(soldier06)
     return [s for s in soldiers if name in s['name']]
-    # soldier3 = {}
-    # soldier3['name'] = "Leo Bert Abramoski"
-    # soldier3['dob'] = "02/07/1933"
-    # sodlier3['dod'] = "07/28/1964"
-    # soldier3['militaryBranch'] = "Army"
-    # soldier3['rank'] = "CAPT"
-    # soldiers.append(soldier3)
-    # soldier4 = {}
-    # soldier4['name'] = "Roberts John Achas"
-    # soldier4['dob'] = "01/01/1943"
-    # sodlier4['dod'] = "03/14/1965"
-    # soldier4['militaryBranch'] = "Marine Corp"
-    # soldier4['rank'] = "LCPL"
-    # soldiers.append(soldier4)
-    # soldier5 = {}
-    # soldier5['name'] = "Jesse Rodriquez Acosta"
-    # soldier5['dob'] = "08/06/1934"
-    # sodlier5['dod'] = "05/16/1965"
-    # soldier5['militaryBranch'] = "Air Force"
-    # soldier5['rank'] = "SSGT"
-    # soldiers.append(soldier5)
-    # soldier6 = {}
-    # soldier6['name'] = "James Blair Alexander"
-    # soldier6['dob'] = "10/07/1925"
-    # sodlier6['dod'] = "02/10/1965"
-    # soldier6['militaryBranch'] = "Army"
-    # soldier6['rank'] = "SP5"
-    # soldiers.append(soldier6)
-    # soldier7 = {}
-    # soldier7['name'] = "James Edwin Bailey"
-    # soldier7['dob'] = "04/28/1928"
-    # sodlier7['dod'] = "09/04/1964"
-    # soldier7['militaryBranch'] = "Army"
-    # soldier7['rank'] = "SSGT"
-    # soldiers.append(soldier7)
-    # soldier8 = {}
-    # soldier8['name'] = "Leo Bert Abramoski"
-    # soldier8['dob'] = "02/07/1933"
-    # sodlier8['dod'] = "07/28/1964"
-    # soldier8['militaryBranch'] = "Army"
-    # soldier8['rank'] = "CAPT"
-    # soldiers.append(soldier8)
+    return [s for s in soldiers if branch in s['branch']]
+    return [s for s in soldiers if birth in s['birth']]
     # soldier9 = {}
     # soldier9['name'] = "Thomas Arthur Bain"
     # soldier9['dob'] = "04/24/1946"

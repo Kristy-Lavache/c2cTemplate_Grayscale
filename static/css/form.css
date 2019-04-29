@@ -9,7 +9,7 @@ html{
 }
 
 
-/*#FirstName, #LastName, #birth, #death, #branch {*/
+/*#fullName, #birth, #death, #branch {*/
 label {
     font-weight: bold;
     margin: 10px;
