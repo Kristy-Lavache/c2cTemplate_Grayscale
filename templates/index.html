@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Remember</title>
+    <title>Finding Your Loved Ones</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../static/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -140,33 +140,27 @@
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
             <h2 class="text-white mb-5">Contact Us!</h2>
 
-            <form class="form-inline d-flex">
-            <div class="col-md-6 mb-3">
-                <label id="FirstName" for="firstName">First Name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="First Name" placeholder value required>
-                <div class="invalid-feedback">
-                  Valid first name is required.
+            <form class="form-inline d-flex" id="post">
+                <div class="col-md-5 mb-3" id="name">
+                    <label id="Name" for="name">Name</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="Name" placeholder value required>
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label id="LastName" for="lastName">Last Name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Last Name" placeholder value required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
+                <div class="col-md-5 mb-3" id="email">
+                    <label id="Email" for="email">Email</label>
+                    <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter Email">
+                    <div class="invalid-feedback">
+                      Valid email address is required.
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 mb-3" id=email>
-                <label id="Email" for="email">Email</label>
-                <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter Email">
-                <div class="invalid-feedback">
-                  Valid email address is required.
+                <div>
+                    <label id="Message">Message</label>
+                  <textarea rows="15" cols="100"></textarea>
+                  <button id="sendMessage" type="submit" class="btn btn-primary mx-auto">Send Message</button>
                 </div>
-            </div>
-            <div>
-                <label id="Message">Message</label>
-              <textarea rows="15" cols="100"></textarea>
-              <button id="SendMessage" type="submit" class="btn btn-primary mx-auto">Send Message</button>
-            </div>
+                <div class="message"></div>
             </form>
 
           </div>
@@ -198,7 +192,7 @@
                 <h4 class="text-uppercase m-0">Email</h4>
                 <hr class="my-4">
                 <div class="small text-black-50">
-                  <a href="#">FLO@gmail.com</a>
+                  <a href="#">FYLO.gmail.com</a>
                 </div>
               </div>
             </div>

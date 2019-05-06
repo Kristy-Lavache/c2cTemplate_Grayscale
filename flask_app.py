@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 import json
+import smtplib
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
@@ -16,6 +17,25 @@ def data():
     #return render_template("data.html")
     return json.dumps(loaddata())
 
+@app.route('/send', methods=['GET'])
+def send():
+    f = open('password.txt', 'r')
+    password = f.read()
+    server = smtplib.SMTP("smtp.gmail.com",587)
+    server.ehlo()
+    server.starttls()
+    email = "kristy.lavache@gmail.com"
+
+    server.login(email,password)
+
+    msg = "Hello"
+
+    server.sendmail(email, "edeesis@gmail.com", msg)
+
+    f.close()
+    server.quit()
+
+    return json.dumps(loaddata())
 
 # def data():
 #     file_object  = open("data.txt", "r")
@@ -142,5 +162,4 @@ def loaddata():
 if __name__ == '__main__':
     # print(data())
     #app.run()
-    print(loaddata())
 

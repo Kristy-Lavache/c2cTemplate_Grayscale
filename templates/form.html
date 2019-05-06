@@ -18,37 +18,52 @@
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
                     <h1 style="color:green" class="Title"> Start Your Search Here!</h1>
-                    <h5 style="color:red" id="fillout">Please fill out the form to the best of your ability with the information of the person you are trying to find.</h2>
+                    <h4 style="color:black" id="fillout">Please fill out the form to the best of your ability with the information of the person you are trying to find.</h4>
+                    <h6 style="color:red" id="note">*Name, birth date, and/or death date must be accompanied by the branch in which your loved one served. We are sorry for the inconvience.*</h6>
                 </div>
             </div>
     </header>
-    <div id="namebox" class="col-md-6">
-        <label id="fullName" for="firstName">Full Name</label>
-        <input type="text" class="form-control" id="firstName" placeholder="Sean Williams" value="" required="">
+    <div id="Form">
+        <div id="namebox" class="col-md-6">
+            <label id="fullName" for="firstName">Full Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Sean Williams" value="" required="">
+        </div>
+        <div class="col-md-7">
+            <label id="branch" for="branch">What branch of military did your loved one belong to?</label>
+            <select class="form-control" class="statusText" id="Branch" value="" required="">
+                <option>Select One</option>
+                <option>Coast Guard</option>
+                <option>Air Force</option>
+                <option>Army</option>
+                <option>Marines</option>
+                <option>Navy</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label id="birth">Date of loved ones birth.</label>
+            <input class="form-control" class="statusText" id="Birth" type="date">
+        </div>
+        <div class="col-md-4">
+            <label id="death">Date of loved ones death.</label>
+            <input class="form-control" class="statusText" id="Death" type="date">
+        </div>
+        <div id="button">
+            <button onclick="loadtable()">Submit</button>
+        </div>
+        <table id="output" class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Date of Birth (yyyy-mm-dd)</th>
+                    <th scope="col">Date of Death (yyyy-mm-dd)</th>
+                    <th scope="col">Military Branch</th>
+                    <th scope="col">Rank</th>
+                </tr>
+            </thead>
+            <tbody id="output">
+            </tbody>
+        </table>
     </div>
-    <div class="col-md-7">
-        <label id="branch" for="branch">What branch of military did your loved one belong to?</label>
-        <select class="form-control" class="statusText" id="Branch" value="" required="">
-            <option>Select One</option>
-            <option>Coast Guard</option>
-            <option>Air Force</option>
-            <option>Army</option>
-            <option>Marines</option>
-            <option>Navy</option>
-        </select>
-    </div>
-    <div class="col-md-4">
-        <label id="birth">Date of loved ones birth.</label>
-        <input class="form-control" class="statusText" id="Birth" type="date">
-    </div>
-    <div class="col-md-4">
-        <label id="death">Date of loved ones death.</label>
-        <input class="form-control" class="statusText" id="Death" type="date">
-    </div>
-    <div id="button">
-        <button onclick="loadtable()">Submit</button>
-    </div>
-    <table id="output" class="table"></table>
     <script src="../static/js/table.js"></script>
     </body>
 </html>

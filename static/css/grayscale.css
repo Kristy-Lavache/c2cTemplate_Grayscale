@@ -299,10 +299,14 @@ footer {
     font-size: 25px;
 }
 
-#Email, #FirstName, #LastName, #Message {
+#Email, #Name, #Message {
     color: white;
 }
 
-#SendMessage.btn.btn-primary.mx-auto {
-    margin-top: 20px;
+#sendMessage {
+    margin-top: 15px;
 }
+
+
+
+

@@ -41,5 +41,4 @@ function addSoldier(soldier) {
     rank.innerText = soldier.rank;
     newRow.appendChild(rank);
 
-    // output.appendChild(newRow);
 }
